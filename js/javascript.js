@@ -10,7 +10,7 @@ buttonsWrapper.addEventListener("click", e => {
       slides.style.transform = "translateX(0%)";
       e.target.classList.add("active");
     } else if (e.target.classList.contains("second")) {
-      slides.style.transform = "translateX(25.33333333333333%)";
+      slides.style.transform = "translateX(15.33333333333333%)";
       e.target.classList.add("active");
     } else if (e.target.classList.contains('third')){
       slides.style.transform = "translateX(-15.33333333333333%)";
