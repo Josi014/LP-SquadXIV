@@ -1,120 +1,12 @@
-.plano-de-fundo2{
-    background: black;
-    position:absolute;
-}
-
-.logo2{
-    background-image: url(images/logo-cinza.jpeg);
-    width: 100%;
-    height: 250px;
-    position: absolute; 
-}
-
-.logo2:before,
-.logo2:after{
-    content: '';
-    position: absolute;
-    left: -2px;
-    top: -2px;
-    background:linear-gradient(45deg,#0000ff,gray,#174978d2, white, black);
-    width:calc( 100% + 4px);
-    height: calc( 100% + 4px);
-    background-size: 400%;
-    z-index: -1;
-    animation: animate 20s linear infinite;
-}
-
-@keyframes animate{
-    0%{
-        background-position: 0 0;
-    }
-
-    50%{
-        background-position:300% 0;
-    }
-
-    100%{
-        background-position:0 0;
-    }
-}
-
-.logo2:after{
-    filter: blur(20px);
-}
-
-#logo-squad{
-    position: absolute;
-    width: 15%;
-    height: 10%;
-    margin: 15px 0;
-    left: 10%;
-    border-radius: 20px;
-    border: 5px solid;
-    border-color: gray;  
-    box-shadow: 10px 10px 10px #000000;    
-}
-
-.voltar-inicio{
-    position: fixed;
-    right: 0;
-    top: 85%;
-    width: 70px;
-    margin-top: -2.5em;
-    margin-right: 0.5rem;
-    padding: 1rem;
-    background: gray;
-    border-radius: 50px;
-    border: 5px solid;
-    border-color: black;    
-}
-
-.voltar-inicio:hover{
-    border-color: #174978d2;
-}
-
-.voltar-inicio:active{
-    border-color: gray;
-}
-
-nav {
-    position: absolute;
-    top: 110px;
-    right: 20px;
-}
-
-nav li {
-   display: inline;
-   margin: 0 0 0 15px;
-}
-
-nav a {
-    text-transform: uppercase;
-    font-family: initial;
-    color: black;
-    font-size: 22px;
-    text-decoration: none;
-}
-
-nav a:hover{
-    color: #174978d2;
-    text-decoration: underline;
-    font-weight: bolder;
-    font-size: 23px;
-    box-shadow: 5px 5px 5px white;   
-}
-
 .titulo{
+    display: flex;
     position: absolute;
-    padding-top: 50%;
-    padding-left: 400px ;
+    text-align: center;
+    padding-top: 30%;
     color: gray;
     font-weight: bolder;
     font-size: 50px;
     font-family: Georgia, 'Times New Roman', Times, serif;
-}
-
-main{
-    width: 1000px;
 }
 
 img{
@@ -202,12 +94,13 @@ span {
 
 figure:hover span {opacity: 0.76;filter:alpha(opacity=76);}
     figure {
+    display: flex;
     max-width: 550px;
     height: 354px;
     position:relative;
     overflow: hidden;
     margin: 50px auto;
-    top: 600px;
+    top: 500px;
     border: 10px solid;
     border-color: #174978d2;    
 }
@@ -227,35 +120,3 @@ figcaption {
     z-index: 5;
 }
 
-footer{
-    display: flex;
-    background-color: black;
-    font-family: 'Ubuntu', sans-serif;
-    flex-direction: column;
-    align-items: center;
-    margin-top: 1060px;
-}
-
-footer p{
-    margin-bottom: 10px;
-}
-
-.Copyright{
-    color: #ffffff;
-    font-size: 13px;
-    margin: 20px;
-}
-
-@media(max-width: 700px){
-    .logo2, .plano-de-fundo2
-    header{
-        display: flex;
-        flex-direction: column;
-        margin-bottom: 10px;
-    }
-
-    figure{
-        display: flex;
-    }
-
-}
