@@ -1,11 +1,12 @@
-form{
+form {
     align-items: center;
     margin: 40px 350px;
     padding-top: 250px;
     color: #ffffff;
 }
 
-form label, form p{
+form label,
+form p {
     display: block;
     font-size: 20px;
     margin: 0 0 10px;
@@ -18,7 +19,7 @@ form label, form p{
     width: 100%;
 }
 
-.enviar{
+.enviar {
     width: 90%;
     padding: 15px 0;
     background: #174978d2;
@@ -31,8 +32,7 @@ form label, form p{
     cursor: pointer;
 }
 
-.enviar:hover{
+.enviar:hover {
     background: #1861a5d2;
-    transform: scale(1.2);    
+    transform: scale(1.2);
 }
-

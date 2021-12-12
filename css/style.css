@@ -1,4 +1,4 @@
-.titulo-integrantes{
+.titulo-integrantes {
     position: absolute;
     padding-top: 320px;
     padding-left: 225px;
@@ -8,7 +8,7 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
-.center{ 
+.center {
     align-items: center;
     display: flex;
     flex-direction: column;
@@ -23,23 +23,23 @@
     width: 55em;
 }
 
-.wrapper > .inner { 
-        display: flex;
-        grid-gap: 1em;
-        transition: all 1s ease-in-out;
-        height: 300px; 
-        position: absolute;
-        padding-top: 450px;    
-}   
+.wrapper>.inner {
+    display: flex;
+    grid-gap: 1em;
+    transition: all 1s ease-in-out;
+    height: 300px;
+    position: absolute;
+    padding-top: 450px;
+}
 
-.card{
+.card {
     margin: 20px;
     border-radius: 0.5em;
-    box-shadow: 1px 1px 10px #174978d2; 
+    box-shadow: 1px 1px 10px #174978d2;
     border-radius: 5px;
 }
 
-.card > img {
+.card>img {
     border-top-right-radius: inherit;
     border-top-left-radius: inherit;
     display: block;
@@ -47,25 +47,27 @@
     height: 250px;
 }
 
-.card >.content {
+.card>.content {
     border-bottom-left-radius: inherit;
     border-bottom-right-radius: inherit;
     padding: 1em;
-    background-color: #174978d2; 
-    text-align: center;}
-
-.card > .content:hover{
-    background-color: #08233bd2;
-
+    background-color: #174978d2;
+    text-align: center;
 }
 
-h1, h3 {
-    margin:  0.35em 0;}
+.card>.content:hover {
+    background-color: #08233bd2;
+}
+
+h1,
+h3 {
+    margin: 0.35em 0;
+}
 
 h1 {
-  color: #fff;
-  font-size: 1.25rem;
-  line-height: 1;
+    color: #fff;
+    font-size: 1.25rem;
+    line-height: 1;
 }
 
 h3 {
@@ -74,7 +76,7 @@ h3 {
     font-weight: 300;
 }
 
-button{
+button {
     position: relative;
     background-color: blue;
     cursor: pointer;
@@ -86,8 +88,32 @@ button{
     height: 15px;
 }
 
-
-button:hover{
-    background-color:bisque ;
+button:hover {
+    background-color: bisque;
 }
- 
+
+@media(max-width: 700px) {
+    header {
+        display: flex;
+        flex-direction: column;
+        margin-bottom: 10px;
+    }
+    h1 {
+        text-align: center;
+        font-size: 2rem;
+        margin: 5px;
+        color: white;
+        text-shadow: 1px 2px 4px black;
+    }
+    h3 {
+        text-align: center;
+        margin-top: 15px;
+        font-size: 1.2rem;
+        margin: 5px;
+        color: white;
+        text-shadow: 1px 2px 4px black;
+    }
+    main {
+        flex-basis: 100%;
+    }
+}

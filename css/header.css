@@ -1,51 +1,49 @@
-body{
+body {
     margin: 0;
     padding: 0;
     background: #000;
 }
 
-.logo2{
+.logo2 {
     position: relative;
     padding: 0;
     margin: 0;
-    width:100%;
+    width: 100%;
     height: 250px;
-    background: linear-gradient(0deg,gray,#262626);
+    background: linear-gradient(0deg, gray, #262626);
 }
 
 .logo2:before,
-.logo2:after{
+.logo2:after {
     content: '';
     position: absolute;
     left: -2px;
     top: -2px;
-    background:linear-gradient(45deg,#0000ff,gray,#174978d2, white, black);
-    width:calc( 100% + 4px);
+    background: linear-gradient(45deg, #0000ff, gray, #174978d2, white, black);
+    width: calc( 100% + 4px);
     height: calc( 100% + 4px);
     background-size: 400%;
     z-index: -1;
     animation: animate 20s linear infinite;
 }
 
-@keyframes animate{
-    0%{
+@keyframes animate {
+    0% {
         background-position: 0 0;
     }
-
-    50%{
-        background-position:300% 0;
+    50% {
+        background-position: 300% 0;
     }
-
-    100%{
-        background-position:0 0;
+    100% {
+        background-position: 0 0;
     }
 }
 
-.logo2:after{
+.logo2:after {
     filter: blur(20px);
 }
 
-#logo-squad{
+#logo-squad {
     position: absolute;
     width: 150px;
     height: 150px;
@@ -53,11 +51,11 @@ body{
     left: 10%;
     border-radius: 20px;
     border: 5px solid;
-    border-color: gray;  
-    box-shadow: 10px 10px 10px #000000;    
+    border-color: gray;
+    box-shadow: 10px 10px 10px #000000;
 }
 
-.voltar-inicio{
+.voltar-inicio {
     position: fixed;
     right: 0;
     top: 85%;
@@ -68,14 +66,14 @@ body{
     background: gray;
     border-radius: 50px;
     border: 5px solid;
-    border-color: black;    
+    border-color: black;
 }
 
-.voltar-inicio:hover{
+.voltar-inicio:hover {
     border-color: #174978d2;
 }
 
-.voltar-inicio:active{
+.voltar-inicio:active {
     border-color: gray;
 }
 
@@ -86,8 +84,8 @@ nav {
 }
 
 nav li {
-   display: inline;
-   margin: 0 0 0 15px;
+    display: inline;
+    margin: 0 0 0 15px;
 }
 
 nav a {
@@ -98,16 +96,18 @@ nav a {
     text-decoration: none;
 }
 
-nav a:hover{
+nav a:hover {
     color: blue;
     text-decoration: underline;
     font-weight: bolder;
     font-size: 23px;
-    box-shadow: 5px 5px 5px white;   
+    box-shadow: 5px 5px 5px white;
 }
 
+
 /**RODAPE**/
-footer{
+
+footer {
     display: flex;
     background-color: gray;
     font-family: 'Ubuntu', sans-serif;
@@ -116,11 +116,11 @@ footer{
     margin-top: 1060px;
 }
 
-footer p{
+footer p {
     margin-bottom: 10px;
 }
 
-.Copyright{
+.Copyright {
     color: #000000;
     font-size: 13px;
     margin: 20px;
