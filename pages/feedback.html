@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>#Teu Futuro/Imed</title>
+
+    <link rel="stylesheet" href="../css/reset.css">
+    <link rel="stylesheet" href="../css/header.css">
+    <link rel="stylesheet" href="../css/feedback.css">
+    <link rel="stylesheet" href="../css/responsividade.css">
+
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width">
+</head>
+
+<body>
+    <header>
+        <div id="voltar-inicio" class="logo2"></div>
+        <img id="logo-squad" alt="logo do squad 14" src="../images/cabecalho/logo-squad.jpeg">
+        <nav>
+            <ul>
+                <li><a href="#feedback">Feedback</a></li>
+                <li><a href="projetos.html">Projetos</a></li>
+                <li><a href="index.html">Home</a></li>
+                <li class="voltar-inicio"><a href="#voltar-inicio">inicio</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <form id="feedebackForm" action="https://formspree.io/f/mvodjlby" method="post">
+            <label for="nomesobrenome" id="feedback">Nome e sobrenome</label>
+            <input type="text" id="nomesobrenome" class="input-padrao" required>
+
+            <label for="email">Email</label>
+            <input type="email" name="_replyo" id="email" class="input-padrao" required placeholder="seuemail@dominio.com">
+
+
+            <label for="comentario">Comentário</label>
+            <textarea cols="40" rows="10" id="comentario" class="input-padrao" required placeholder="Digite aqui"></textarea>
+
+            <div>
+                <p>Qual nota você dá ao nosso projeto?</p>
+                <select class="input-padrao">
+                                <option>0</option>
+                                <option>1</option>
+                                <option>2</option>
+                                <option>3</option>
+                                <option>4</option>
+                                <option>5</option>
+                                <option>6</option>
+                                <option>7</option>
+                                <option>8</option>
+                                <option>9</option>
+                                <option>10</option>
+                            </select>
+            </div>
+
+            <input type="submit" value="EnviarFeedback" class="enviar">
+        </form>
+    </main>
+
+    <footer>
+        <p class="Copyright">&copy;Copyright Squad Future Student - 2021</p>
+    </footer>
+
+</body>
+
+</html>
